@@ -19,4 +19,6 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('get-employees/', views.get_employees, name='get_emps'),  # petname: get_emmps
+    path('create-employee/', views.create_employee, name='create_emp'),
 ]
